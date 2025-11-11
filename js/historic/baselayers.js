@@ -109,7 +109,7 @@ function getBaselayers() {
       }
     ),
     "Pourbus, Brugge (1571)": L.tileLayer(
-      "https://geo.api.vlaanderen.be/HISTCART/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=pourbus&STYLE=&TILEMATRIXSET=GoogleMapsVL&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png",
+      "https://geo.api.vlaanderen.be/HISTCART/wmts?layer=pourbus&tilematrixset=GoogleMapsVL&Service=WMTS&Request=GetTile&Version=1.0.0&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png",
       {
         attribution: '<a href="https://geo.api.vlaanderen.be/">© Geo Vlaanderen</a> | <a href="http://www.museabrugge.be/">Musea Brugge</a>'
       }
