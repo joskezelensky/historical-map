@@ -109,9 +109,9 @@ function getBaselayers() {
       }
     ),
     "Pourbus, Brugge (1571)": L.tileLayer(
-      "https://www.pourbuskaart.museabrugge.be/assets/map-data/pourbus-map/{z}/{y}/{x}",
+      "https://geo.api.vlaanderen.be/HISTCART/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=pourbus&STYLE=default&TILEMATRIXSET=GoogleMapsVL&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png",
       {
-        attribution: '<a href="http://www.museabrugge.be/">musea Brugge</a>'
+        attribution: '<a href="https://geo.api.vlaanderen.be/">© Geo Vlaanderen</a> | <a href="http://www.museabrugge.be/">Musea Brugge</a>'
       }
     ),
     "Masse, Westhoek only (1729)": L.tileLayer.wms(
