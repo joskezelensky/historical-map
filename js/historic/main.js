@@ -8,7 +8,8 @@
     layers: [baselayers["OSMorg"]],
     attributionControl: false
   });
-map.addControl(new L.Control.Scale({
+
+  map.addControl(new L.Control.Scale({
     maxWidth: 200, 
     position: 'bottomleft', 
     imperial: false
