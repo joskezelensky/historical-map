@@ -5,9 +5,10 @@
   var map = L.map("map", {
     center: [50.8398, 4.4247],
     zoom: 11,
-    layers: [baselayers["OSMorg"]],
+    layers: [baselayers["NGI Basemap 1873"]],
     attributionControl: false
   });
+  layers["OpenStreetMap Roads"].addTo(map);
 
   map.addControl(new L.Control.Scale({
     maxWidth: 200, 
