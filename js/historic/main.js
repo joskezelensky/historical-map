@@ -5,11 +5,14 @@
   var map = L.map("map", {
     center: [50.8398, 4.4247],
     zoom: 11,
-    layers: [baselayers["NGI Basemap 1873"]],
+    layers: [baselayers["OSMorg"]],
     attributionControl: false
   });
-  layers["OpenStreetMap Roads"].addTo(map);
-
+map.addControl(new L.Control.Scale({
+    maxWidth: 200, 
+    position: 'bottomleft', 
+    imperial: false
+  }));
 
   L.Control.geocoder({
     position: "topleft"
