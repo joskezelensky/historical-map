@@ -61,6 +61,22 @@ function getBaselayers() {
         maxZoom: 21
       }
     ),
+    "Orthos SPW les + récents": L.tileLayer.wms("https://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_LAST/MapServer/WmsServer?", {
+    maxZoom: 20,
+    layers: "0",
+    format: "image/jpeg",
+    attribution: "&copy Service Public de Wallonie",
+    continuousWorld: !0,
+    crs: L.CRS.EPSG3857
+}),
+    "Orthos SPW 2021":  L.tileLayer.wms("https://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_2021/MapServer/WmsServer?", {
+    maxZoom: 20,
+    layers: "0",
+    format: "image/jpeg",
+    attribution: "&copy Service Public de Wallonie",
+    continuousWorld: !0,
+    crs: L.CRS.EPSG3857
+}),
     "GRB basemap (FL)": L.tileLayer(
       "https://geo.api.vlaanderen.be/GRB/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=grb_bsk&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={z}&tileRow={y}&tileCol={x}",
       {
