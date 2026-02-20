@@ -220,15 +220,6 @@ function getBaselayers() {
         attribution: "Tiles provided by Digitaal Vlaanderen"
       }
     ),
-    "Carte du dépôt de la guerre (1865 - 1880, WAL)": L.tileLayer.wms(
-      "https://geoservices.wallonie.be/arcgis/services/CARTES_ANCIENNES/DEPOT_GUERRE_1865_1880/MapServer/WMSServer?",
-      {
-        format: "image/png",
-        layers: "0",
-        transparent: false,
-        attribution: "SPW"
-      }
-    ),
     "NGI Basemap 1873": L.tileLayer(
       "https://wmts.ngi.be/arcgis/rest/services/seamless_carto__default__3857__140/MapServer/tile/{z}/{y}/{x}",
       {
