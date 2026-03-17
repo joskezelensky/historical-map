@@ -34,7 +34,6 @@
     .locate({
       locateOptions: { enableHighAccuracy: true },
       drawCircle: true,
-      locateOptions: { maxZoom: 17 }
     })
     .addTo(map);
 
