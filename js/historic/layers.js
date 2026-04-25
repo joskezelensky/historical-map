@@ -45,7 +45,8 @@ function getLayers() {
       "https://gps-a.tile.openstreetmap.org/lines/{z}/{x}/{y}.png",
       {
         attribution:
-          'GPX data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+          'GPX data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+        maxZoom: 22
       }
     ),
     "Trage Wegen Register (VL)": L.tileLayer.wms(
